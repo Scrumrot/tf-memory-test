@@ -1,5 +1,5 @@
 export default interface GridTileType {
-  columns: number;
-  rows: number;
-  alignSelf: ['start', 'end', 'center', 'stretch'];
+  id: number;
+  number: number;
+  flipped: boolean;
 }
