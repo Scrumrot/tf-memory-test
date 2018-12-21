@@ -14,11 +14,14 @@ const Tile = (props: GridTileType) => {
         <div
           className={getInnerCN(!!number, flipped)}
         >
-          <strong className="tf-tile-number">{number}</strong>
+          <div className="tf-flip-card-front">
+            <strong className="tf-tile-number">{number}</strong>
+          </div>
+          <div className="tf-flip-card-back"/>
         </div>
       </div>
     );
 };
 
 
-export default 
+export default Tile
